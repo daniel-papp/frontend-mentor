@@ -47,7 +47,7 @@ picture, .container {
 
 #product-pic {
     width: 100%;
-    border-radius: 12px 0 0 15px;
+    border-radius: 15px 0 0 15px;
 }
 
 .container {
@@ -121,4 +121,28 @@ button:hover {
 
 button:active {
     background-color: hsl(158, 36%, 37%); 
+}
+
+@media (max-width: 640px) {
+    .card {
+        width: 400px;
+        height: auto;
+        flex-direction: column;
+    }
+
+    picture, .container {
+        width: 100%;
+    }
+
+    #product-pic {
+        border-radius: 15px 15px 0 0;
+    }
+
+    .container > * {
+        margin: 10px 0;
+    }
+
+    .prices {
+        justify-content: flex-start;
+    }
 }
