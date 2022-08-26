@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@300;400&display=swap');
+
+:root {
+    --clr-primary-orange: hsl(31, 77%, 52%);
+    --clr-primary-cyan: hsl(184, 100%, 22%);
+    --clr-primary-dark-cyan: hsl(179, 100%, 13%);
+    --clr-para: hsla(0, 0%, 100%, 0.75);
+    --clr-main: hsl(0, 0%, 95%);
+    --ff-heading: 'Big Shoulders Display', cursive;
+    --ff-para: 'Lexend Deca', sans-serif;
+
+    font-size: 15px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: var(--clr-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 900px;
+    height: 520px;
+    margin: 20px;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card {
+    padding: 50px 60px 50px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:first-child {
+    background-color: var(--clr-primary-orange);
+    color: var(--clr-primary-orange);
+}
+
+.card:nth-child(2) {
+    background-color: var(--clr-primary-cyan);
+    color: var(--clr-primary-cyan);
+}
+
+.card:last-child {
+    background-color: var(--clr-primary-dark-cyan);
+    color: var(--clr-primary-dark-cyan);
+}
+
+img {
+    width: 4rem;
+}
+
+h2 {
+    font-family: var(--ff-heading);
+    font-size: 2.8rem;
+    color: var(--clr-main);
+    margin: 20px 0;
+}
+
+p {
+    font-family: var(--ff-para);
+    color: var(--clr-para);
+    line-height: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 60px;
+}
+
+button {
+    font-family: var(--ff-para);
+    background-color: var(--clr-main);
+    color: inherit;
+    width: 70%;
+    height: 2.8rem;
+    border: 2px solid var(--clr-main);
+    border-radius: 2.8rem;
+}
+
+button:hover {
+    background-color: inherit;
+    color: var(--clr-main);
+}
+
