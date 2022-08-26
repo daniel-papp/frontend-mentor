@@ -8,3 +8,4 @@ Frontend Mentor is a website designed to help you improve your coding skills in 
 
 - QR Code Component
 - Product Preview Card Component
+- 3 Column Preview Card Component
