@@ -95,3 +95,16 @@ button:hover {
     color: var(--clr-main);
 }
 
+@media (max-width: 940px) {
+
+    html {
+        height: auto;
+    }
+
+    .container {
+        width: 300px;
+        min-width: 300px;
+        height: auto;
+        flex-direction: column;        
+    }
+}
