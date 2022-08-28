@@ -20,7 +20,7 @@
 
 body {
     min-height: 100vh;
-    min-width: 375px;
+    min-width: 350px;
     display: flex;
     flex-direction: column;
     padding: 90px 25px;
@@ -46,7 +46,7 @@ header p {
 .ratings-card {
     background-color: var(--clr-light-gray);
     border-radius: 10px;
-    max-width: 350px;
+    max-width: 325px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -68,6 +68,52 @@ header p {
     font-weight: 700;
     color: var(--clr-primary-magenta);
 }
+
+.testamonial-card {
+    background-color: var(--clr-primary-magenta);
+    border-radius: 10px;
+    max-width: 325px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px auto;
+    padding: 40px 28px;
+}
+
+.customer-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.customer-pic {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3rem;
+    margin-right: 25px;
+}
+
+.customer-info p {
+    font-weight: 500;
+    margin: 6px auto;
+}
+
+.customer-info p:first-child {
+    color: var(--clr-white);
+}
+
+.customer-info p:last-child {
+    color: var(--clr-primary-pink);
+}
+
+.testamonial-card > p {
+    color: var(--clr-white);
+    line-height: 1.4rem;
+}
+
+
+
 
 /* Temp borders */
 header,
