@@ -1,11 +1,20 @@
-# Frontend Mentor Challenges
+# Frontend Mentor - Social Proof Section
 
-This repository serves as a collection of challanges I completed from [frontendmentor.io](https://www.frontendmentor.io/). 
+## Overview
 
-Frontend Mentor is a website designed to help you improve your coding skills in **HTML**, **CSS** and **JavaScript** by building realistic projects.
+In this challange I created a product review section with a *mobile first* approach. The section contains cards for ratings and testaments form users.
 
-### Challenges completed so far:
+### Screenshot
 
-- QR Code Component
-- Product Preview Card Component
-- 3 Column Preview Card Component
+![](./images/screenshot.png)
+
+### Built with
+
+- HTML 5
+- CSS 3
+- Flexbox
+- CSS Grid
+
+### What I learnt
+
+I used a *mobile first* approach during the project. This means that my media query for the desktop layout adds complexity to the design rather than removing it to reach a simpler, mobile layout. I also used CSS Grid to place the main sections on the desktop view and then controlled the flow of the smaller elements with Flexbox.
