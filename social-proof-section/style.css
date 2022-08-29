@@ -18,8 +18,13 @@
     font-family: var(--ff-main);
 }
 
+html {
+    width: 375px;
+    margin: 0 auto;
+}
+
 body {
-    min-width: 350px;
+    /* width: 375px; */
     display: flex;
     flex-direction: column;
     padding: 60px 25px;
@@ -121,6 +126,11 @@ header p {
 }
 
 @media (min-width: 980px) {
+
+    html {
+        width: auto;
+        max-width: 1800px;
+    }
 
     body {
         display: grid;
