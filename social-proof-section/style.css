@@ -24,6 +24,9 @@ body {
     flex-direction: column;
     padding: 60px 25px;
     background-color: var(--clr-white);
+    background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, no-repeat;
 }
 
 header,
@@ -117,13 +120,16 @@ header p {
     line-height: 1.4rem;
 }
 
-@media (min-width:980px) {
+@media (min-width: 980px) {
 
     body {
         display: grid;
         grid-gap: 20px;
         grid-template-columns: 2fr 3fr;
         padding: 60px 90px;
+        background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+        background-position: left top, right bottom;
+        background-repeat: no-repeat, no-repeat;
     }
 
     header {
