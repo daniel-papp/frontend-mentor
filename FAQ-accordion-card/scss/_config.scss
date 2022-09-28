@@ -1,1 +1,10 @@
-$bg-grad: linear-gradient(90deg, hsl(240, 73%, 65%), hsl(273, 75%, 66%))
+$bg-grad: linear-gradient(90deg, hsl(240, 73%, 65%), hsl(273, 75%, 66%));
+
+$clr-primary-text: hsl(238, 29%, 16%);
+$clr-highlight-text: hsl(14, 88%, 65%);
+$clr-question-text: hsl(237, 12%, 33%);
+$clr-answer-text: hsl(240, 6%, 50%);
+$clr-divider: hsl(240, 5%, 91%);
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+$ff-kumbh-sans: 'Kumbh Sans', sans-serif;

@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+:root {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,5 +12,47 @@
 
 body {
   background-image: linear-gradient(90deg, hsl(240deg, 73%, 65%), hsl(273deg, 75%, 66%));
-  height: 100vh;
+  min-height: 100vh;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container {
+  width: 80%;
+  margin-bottom: -135px;
+  z-index: 1;
+}
+.image-container .box {
+  display: none;
+}
+
+.text-container {
+  padding: 200px 25px 40px 25px;
+  background: #fff;
+  border-radius: 20px;
+}
+.text-container h1 {
+  text-align: center;
+  font-size: 3.4rem;
+  margin-bottom: 35px;
+  color: hsl(238deg, 29%, 16%);
+}
+.text-container section {
+  border-bottom: 1px solid hsl(240deg, 5%, 91%);
+}
+.text-container section .question {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 15px auto;
+  color: hsl(237deg, 12%, 33%);
+}
+.text-container section .answer {
+  margin-bottom: 15px;
+  color: hsl(240deg, 6%, 50%);
 }
