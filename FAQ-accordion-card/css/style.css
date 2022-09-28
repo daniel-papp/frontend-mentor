@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(90deg, hsl(240deg, 73%, 65%), hsl(273deg, 75%, 66%));
+  height: 100vh;
+}

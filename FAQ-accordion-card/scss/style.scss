@@ -1,0 +1,12 @@
+@import 'config';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: $bg-grad;
+    height: 100vh;
+}
