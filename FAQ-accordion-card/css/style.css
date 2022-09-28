@@ -25,7 +25,7 @@ body {
 
 .image-container {
   width: 80%;
-  margin-bottom: -135px;
+  transform: translateY(41%);
   z-index: 1;
 }
 .image-container .box {
@@ -33,13 +33,14 @@ body {
 }
 
 .text-container {
-  padding: 200px 25px 40px 25px;
+  padding: 40px 25px;
   background: #fff;
   border-radius: 20px;
 }
 .text-container h1 {
   text-align: center;
   font-size: 3.4rem;
+  margin-top: 100px;
   margin-bottom: 35px;
   color: hsl(238deg, 29%, 16%);
 }
