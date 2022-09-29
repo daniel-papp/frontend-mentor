@@ -50,30 +50,49 @@ body {
     section {
         border-bottom: 1px solid $clr-divider;
 
-        .question-line {
+        .accordion-head {
             display: flex;
             justify-content: space-between;
             align-items: center;
             cursor: pointer;
+            
+            .question {
+                font-size: 1.2rem;
+                font-weight: 400;
+                margin: 15px 0;
+                color: $clr-question-text;
+            }
+    
+            .arrow {
+                height: 0.8rem;
+                transition: 0.3s all;
+            }
+
+            &:hover {
+
+                .question {
+                    color: $clr-primary-text;
+                    font-weight: 700;
+                }
+
+                .arrow {
+                    transform: rotate(180deg);
+                }
+
+                & + .answer {
+                    margin-bottom: 15px;
+                    max-height: 50px;
+                }
+
+            }
+
         }
         
-        .question {
-            font-size: 1.2rem;
-            font-weight: 400;
-            margin: 15px 0;
-            color: $clr-question-text;
-
-        }
-
-        .arrow {
-            height: 0.8rem;
-        }
-
         .answer {
-            margin-bottom: 15px;
             color: $clr-answer-text;
-            // height: 0;
-            // overflow: hidden;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s;
         }
 
     }

@@ -45,22 +45,36 @@ body {
 .text-container section {
   border-bottom: 1px solid hsl(240deg, 5%, 91%);
 }
-.text-container section .question-line {
+.text-container section .accordion-head {
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
 }
-.text-container section .question {
+.text-container section .accordion-head .question {
   font-size: 1.2rem;
   font-weight: 400;
   margin: 15px 0;
   color: hsl(237deg, 12%, 33%);
 }
-.text-container section .arrow {
+.text-container section .accordion-head .arrow {
   height: 0.8rem;
+  transition: 0.3s all;
+}
+.text-container section .accordion-head:hover .question {
+  color: hsl(238deg, 29%, 16%);
+  font-weight: 700;
+}
+.text-container section .accordion-head:hover .arrow {
+  transform: rotate(180deg);
+}
+.text-container section .accordion-head:hover + .answer {
+  margin-bottom: 15px;
+  max-height: 50px;
 }
 .text-container section .answer {
-  margin-bottom: 15px;
   color: hsl(240deg, 6%, 50%);
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
 }
