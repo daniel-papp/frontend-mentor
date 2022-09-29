@@ -16,9 +16,14 @@ body {
     min-height: 100vh;
 }
 
+.box {
+    display: none;
+}
+
 .container {
     width: 90%;
     min-width: 200px;
+    max-width: 1400px;
     margin: 150px auto 20px auto;
     display: flex;
     flex-direction: column;
@@ -35,14 +40,15 @@ body {
 .image-container {
     width: 80%;
     transform: translateY(-57%);
+    flex: 1;
 
-    .box {
-        display: none;
-    }
+    
 }
 
 .text-container {
-
+    
+    flex: 2;
+    
     h1 {
         text-align: center;
         font-size: 3.4rem;
@@ -94,7 +100,7 @@ body {
 
                 & + .answer {
                     margin-bottom: 15px;
-                    max-height: 80px;
+                    max-height: 100px;
                 }
 
             }
@@ -110,21 +116,32 @@ body {
 }
 
 
-@media (min-width: 600px) {
+@media (min-width: 740px) {
+    
+    .box {
+        display: inline;
+        z-index: 1;
+        position: absolute;
+        top: 52%;
+        left: 1%;
+    }
 
     .container {
         flex-direction: row;
-        padding: 40px;
+        padding: 40px 0;
+        overflow: hidden;
         background-image: url('../assets/bg-pattern-desktop.svg');
         background-position: center left;
     }
 
     .image-container {
-        transform: translateY(0);
+        transform: translate(-17%, 0);
+
     }
 
     .text-container {
 
+        margin: 20px 60px;
         h1 {
             margin-top: 0;
         }
