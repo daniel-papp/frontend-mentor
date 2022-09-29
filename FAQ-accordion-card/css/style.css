@@ -23,8 +23,12 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 0 25px 55px 25px;
-  background: #fff;
   border-radius: 20px;
+  background-color: #fff;
+  background-image: url("../assets/bg-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center top;
 }
 
 .image-container {
