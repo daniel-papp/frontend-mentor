@@ -57,6 +57,9 @@ body {
   margin: 15px 0;
   color: hsl(237deg, 12%, 33%);
 }
+.text-container section .accordion-head .question:hover {
+  color: hsl(14deg, 88%, 65%);
+}
 .text-container section .accordion-head .arrow {
   height: 0.8rem;
   transition: 0.3s all;
@@ -65,12 +68,15 @@ body {
   color: hsl(238deg, 29%, 16%);
   font-weight: 700;
 }
+.text-container section .accordion-head.active .question:hover {
+  color: hsl(14deg, 88%, 65%);
+}
 .text-container section .accordion-head.active .arrow {
   transform: rotate(180deg);
 }
 .text-container section .accordion-head.active + .answer {
   margin-bottom: 15px;
-  max-height: 50px;
+  max-height: 80px;
 }
 .text-container section .answer {
   color: hsl(240deg, 6%, 50%);
