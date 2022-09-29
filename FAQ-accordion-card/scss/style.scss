@@ -110,6 +110,23 @@ body {
 }
 
 
-// @media (min-width: 600px) {
+@media (min-width: 600px) {
 
-// }
+    .container {
+        flex-direction: row;
+        padding: 40px;
+        background-image: url('../assets/bg-pattern-desktop.svg');
+        background-position: center left;
+    }
+
+    .image-container {
+        transform: translateY(0);
+    }
+
+    .text-container {
+
+        h1 {
+            margin-top: 0;
+        }
+    }
+}
