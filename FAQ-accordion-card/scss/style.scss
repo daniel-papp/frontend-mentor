@@ -68,7 +68,7 @@ body {
                 transition: 0.3s all;
             }
 
-            &:hover {
+            &.active {
 
                 .question {
                     color: $clr-primary-text;
@@ -85,7 +85,6 @@ body {
                 }
 
             }
-
         }
         
         .answer {
@@ -94,6 +93,5 @@ body {
             overflow: hidden;
             transition: all 0.3s;
         }
-
     }
 }

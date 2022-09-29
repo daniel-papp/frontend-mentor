@@ -61,14 +61,14 @@ body {
   height: 0.8rem;
   transition: 0.3s all;
 }
-.text-container section .accordion-head:hover .question {
+.text-container section .accordion-head.active .question {
   color: hsl(238deg, 29%, 16%);
   font-weight: 700;
 }
-.text-container section .accordion-head:hover .arrow {
+.text-container section .accordion-head.active .arrow {
   transform: rotate(180deg);
 }
-.text-container section .accordion-head:hover + .answer {
+.text-container section .accordion-head.active + .answer {
   margin-bottom: 15px;
   max-height: 50px;
 }
