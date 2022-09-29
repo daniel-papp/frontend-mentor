@@ -16,31 +16,29 @@ body {
 }
 
 .container {
-  width: 80%;
-  margin: auto;
+  width: 90%;
+  min-width: 200px;
+  margin: 150px auto 20px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 25px 25px 25px;
+  background: #fff;
+  border-radius: 20px;
 }
 
 .image-container {
   width: 80%;
-  transform: translateY(41%);
-  z-index: 1;
+  transform: translateY(-57%);
 }
 .image-container .box {
   display: none;
 }
 
-.text-container {
-  padding: 40px 25px;
-  background: #fff;
-  border-radius: 20px;
-}
 .text-container h1 {
   text-align: center;
   font-size: 3.4rem;
-  margin-top: 100px;
+  margin-top: -40px;
   margin-bottom: 35px;
   color: hsl(238deg, 29%, 16%);
 }
