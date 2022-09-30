@@ -33,10 +33,8 @@ body {
 }
 
 .container {
-    // width: 90%;
     min-width: 200px;
     max-width: 1400px;
-    // margin: 150px auto 20px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,8 +51,6 @@ body {
     width: 80%;
     transform: translateY(-57%);
     flex: 1;
-
-    
 }
 
 .text-container {
@@ -83,10 +79,6 @@ body {
                 font-weight: 400;
                 margin: 15px 0;
                 color: $clr-question-text;
-
-                &:hover {
-                    color: $clr-highlight-text;
-                }
             }
     
             .arrow {
@@ -99,12 +91,7 @@ body {
                 .question {
                     color: $clr-primary-text;
                     font-weight: 700;
-                    
-                    &:hover {
-                        color: $clr-highlight-text;
-                    }
                 }
-
 
                 .arrow {
                     transform: rotate(180deg);
@@ -114,7 +101,6 @@ body {
                     margin-bottom: 15px;
                     max-height: 100px;
                 }
-
             }
         }
         
@@ -124,6 +110,13 @@ body {
             overflow: hidden;
             transition: all 0.3s;
         }
+    }
+}
+
+.accordion-head:hover {
+
+    .question {
+        color: $clr-highlight-text !important;
     }
 }
 
@@ -137,9 +130,6 @@ body {
     .box {
         display: inline;
         z-index: 1;
-        // position: absolute;
-        // top: 52%;
-        // left: 1%;
         position: absolute;
         top: 40%;
         left: -90px;
@@ -147,7 +137,6 @@ body {
 
     .container {
         flex-direction: row;
-        // padding: 40px 0;
         overflow: hidden;
         background-image: url('../assets/bg-pattern-desktop.svg');
         background-position: -25% 50%;
@@ -156,7 +145,6 @@ body {
 
     .image-container {
         transform: translateX(-17%);
-
     }
 
     .text-container {

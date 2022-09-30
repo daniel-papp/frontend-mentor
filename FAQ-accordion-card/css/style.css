@@ -77,9 +77,6 @@ body {
   margin: 15px 0;
   color: hsl(237deg, 12%, 33%);
 }
-.text-container section .accordion-head .question:hover {
-  color: hsl(14deg, 88%, 65%);
-}
 .text-container section .accordion-head .arrow {
   height: 0.8rem;
   transition: 0.3s all;
@@ -87,9 +84,6 @@ body {
 .text-container section .accordion-head.active .question {
   color: hsl(238deg, 29%, 16%);
   font-weight: 700;
-}
-.text-container section .accordion-head.active .question:hover {
-  color: hsl(14deg, 88%, 65%);
 }
 .text-container section .accordion-head.active .arrow {
   transform: rotate(180deg);
@@ -103,6 +97,10 @@ body {
   max-height: 0;
   overflow: hidden;
   transition: all 0.3s;
+}
+
+.accordion-head:hover .question {
+  color: hsl(14deg, 88%, 65%) !important;
 }
 
 @media (min-width: 840px) {
