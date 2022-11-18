@@ -68,6 +68,16 @@ body {
         color: $clr-light-text;
     }
 
+    &.center-align {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            text-align: center;
+        }
+    }
+
 }
 
 .rating-area {
