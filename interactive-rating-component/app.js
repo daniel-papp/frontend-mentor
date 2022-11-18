@@ -28,10 +28,22 @@ const createThankYouCard = function() {
     console.log(`Thank You!`);
     console.log(`You selected ${chosenRating} out of 5`);
 
+    header.removeChild(document.querySelector('.star-container'));
+    header.classList.remove('left-align');
+
+    const thankYouImg = document.createElement('img');
+    thankYouImg.setAttribute('src', './assets/illustration-thank-you.svg');
+    header.appendChild(thankYouImg);
+
+    const ratingText = document.createElement('p');
+    ratingText.textContent = `You selected ${chosenRating} out of 5`;
+    ratingText.classList.add('rating-text');
+    header.appendChild(ratingText);
 
     text.classList.add('center-align');
     title.textContent = 'Thank You!';
     paragraph.textContent = 'We appreciate you taking the time to give a rating. If you ever need more support, don\'t hesitate to get in touch!';
+
     card.removeChild(ratingArea);
 }
 
@@ -41,10 +53,7 @@ const submitRating = function() {
     }
 }
 
-
-
 // Assigning event listeners
 
 ratings.forEach(rating => rating.addEventListener('click', chooseRating));
-
 submitButton.addEventListener('click', submitRating);

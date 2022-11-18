@@ -36,6 +36,9 @@ body {
 
 .header {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px;
 }
 .header.left-align {
   align-self: flex-start;
@@ -51,6 +54,12 @@ body {
 }
 .header .star-container .star-icon {
   height: 14px;
+}
+.header .rating-text {
+  color: hsl(25deg, 97%, 53%);
+  background-color: #303a46;
+  padding: 7px 15px 5px 15px;
+  border-radius: 15px;
 }
 
 .text h1 {
@@ -89,6 +98,7 @@ body {
   background-color: #303a46;
   color: hsl(217deg, 12%, 63%);
   padding-top: 2px;
+  cursor: pointer;
 }
 .rating-area .rating-list .rating:hover {
   background-color: hsl(25deg, 97%, 53%);
@@ -108,6 +118,7 @@ body {
   letter-spacing: 0.2rem;
   font-weight: 700;
   border-radius: 40px;
+  cursor: pointer;
 }
 .rating-area button:hover {
   background-color: hsl(0deg, 0%, 100%);
