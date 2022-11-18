@@ -11,3 +11,4 @@ Frontend Mentor is a website designed to help you improve your coding skills in 
 - 3 Column Preview Card Component
 - Social Proof Section
 - FAQ Accordion Card
+- Interactive Rating Component
