@@ -20,13 +20,11 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // align-items: center;
     text-align: center;
 }
 
 header {
-
-    margin: 50px auto;
+    margin: 60px auto;
 
     .hero-title {
         color: c.$clr-light;
@@ -36,4 +34,76 @@ header {
     .hero-para {
         color: lighten(c.$clr-med, 15%);
     }
+}
+
+.trial {
+    background-color: c.$clr-accent;
+    padding: 20px 50px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 3px rgba(0, 0, 0, 0.3);
+
+
+    .trial-para {
+        color: lighten(c.$clr-med, 15%);
+
+        .free-period {
+            color: c.$clr-light;
+            font-weight: 600;
+        }
+    }
+}
+
+.form-container {
+    background-color: c.$clr-light;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 3px rgba(0, 0, 0, 0.3);
+
+    .tos-para {
+        font-size: 0.5rem;
+        color: c.$clr-med;
+        margin-top: 10px;
+
+        a {
+            color: c.$clr-primary-red;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    }
+}
+
+form {
+
+    * {
+        margin: 8px 0;
+    }
+
+    input {
+        height: 2.8rem;
+        font-size: 0.75rem;
+        font-family: c.$ff-main;
+        font-weight: 500;
+        padding: 10px 15px;
+        border: 1px solid c.$clr-med;
+        border-radius: 3px;
+    }
+
+    .submit-btn {
+        height: 2.8rem;
+        font-size: 0.85rem;
+        font-weight: 500;
+        border: none;
+        border-radius: 3px;
+        background-color: c.$clr-primary-green;
+        color: c.$clr-light;
+        letter-spacing: 1px;
+        box-shadow: 0 5px 3px darken(c.$clr-primary-green, 10%);
+        cursor: pointer;
+
+        &:hover {
+            background-color: lighten(c.$clr-primary-green, 10%);
+        }
+    }   
 }

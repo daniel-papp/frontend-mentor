@@ -5,6 +5,12 @@
   padding: 0;
 }
 
+input {
+  outline: none;
+  border: 1px solid #000;
+  border-radius: 0;
+}
+
 :root {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
@@ -33,7 +39,7 @@ form {
 }
 
 header {
-  margin: 50px auto;
+  margin: 60px auto;
 }
 header .hero-title {
   color: hsl(0deg, 0%, 100%);
@@ -41,4 +47,65 @@ header .hero-title {
 }
 header .hero-para {
   color: #e7e6f0;
+}
+
+.trial {
+  background-color: hsl(248deg, 32%, 49%);
+  padding: 20px 50px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 3px rgba(0, 0, 0, 0.3);
+}
+.trial .trial-para {
+  color: #e7e6f0;
+}
+.trial .trial-para .free-period {
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 600;
+}
+
+.form-container {
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 3px rgba(0, 0, 0, 0.3);
+}
+.form-container .tos-para {
+  font-size: 0.5rem;
+  color: hsl(246deg, 25%, 77%);
+  margin-top: 10px;
+}
+.form-container .tos-para a {
+  color: hsl(0deg, 100%, 74%);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+form * {
+  margin: 8px 0;
+}
+form input {
+  height: 2.8rem;
+  font-size: 0.75rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  padding: 10px 15px;
+  border: 1px solid hsl(246deg, 25%, 77%);
+  border-radius: 3px;
+}
+form .submit-btn {
+  height: 2.8rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 3px;
+  background-color: hsl(154deg, 59%, 51%);
+  color: hsl(0deg, 0%, 100%);
+  letter-spacing: 1px;
+  box-shadow: 0 5px 3px #2ba671;
+  cursor: pointer;
+}
+form .submit-btn:hover {
+  background-color: #61d6a3;
 }
