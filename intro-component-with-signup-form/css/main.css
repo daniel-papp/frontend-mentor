@@ -9,3 +9,36 @@
   font-size: 16px;
   font-family: "Poppins", sans-serif;
 }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 25px;
+  background-image: url("../assets/bg-intro-mobile.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: hsl(0deg, 100%, 74%);
+}
+
+header,
+main,
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+header {
+  margin: 50px auto;
+}
+header .hero-title {
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 20px;
+}
+header .hero-para {
+  color: #e7e6f0;
+}

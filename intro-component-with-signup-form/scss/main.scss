@@ -1,2 +1,39 @@
 @use "./reset.scss";
 @use "./config" as c;
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 25px;
+    background-image: url("../assets/bg-intro-mobile.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: c.$clr-primary-red;
+}
+
+header,
+main,
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+    text-align: center;
+}
+
+header {
+
+    margin: 50px auto;
+
+    .hero-title {
+        color: c.$clr-light;
+        margin-bottom: 20px;
+    }
+
+    .hero-para {
+        color: lighten(c.$clr-med, 15%);
+    }
+}
