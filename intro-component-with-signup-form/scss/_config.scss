@@ -1,0 +1,17 @@
+// Colors
+
+$clr-primary-red: hsl(0, 100%, 74%);
+$clr-primary-green: hsl(154, 59%, 51%);
+$clr-accent: hsl(248, 32%, 49%);
+$clr-dark: hsl(249, 10%, 26%);
+$clr-text: hsl(246, 25%, 77%);
+
+// Fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+$ff-main: 'Poppins', sans-serif;
+
+:root {
+    font-size: 16px;
+    font-family: $ff-main;
+}
