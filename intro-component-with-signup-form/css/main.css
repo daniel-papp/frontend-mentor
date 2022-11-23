@@ -97,6 +97,9 @@ form input {
   border: 1px solid hsl(246deg, 25%, 77%);
   border-radius: 3px;
 }
+form input:focus {
+  outline: 1px solid hsl(249deg, 10%, 26%);
+}
 form .submit-btn {
   height: 2.8rem;
   font-size: 0.85rem;

@@ -94,6 +94,10 @@ form {
         padding: 10px 15px;
         border: 1px solid c.$clr-med;
         border-radius: 3px;
+
+        &:focus {
+            outline: 1px solid c.$clr-dark;
+        }
     }
 
     .submit-btn {
