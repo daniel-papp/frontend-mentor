@@ -110,9 +110,11 @@ form {
         color: c.$clr-light;
         letter-spacing: 1px;
         box-shadow: 0 5px 3px darken(c.$clr-primary-green, 10%);
+        outline: none;
         cursor: pointer;
 
-        &:hover {
+        &:hover,
+        &:focus {
             background-color: lighten(c.$clr-primary-green, 10%);
         }
     }   
