@@ -83,7 +83,7 @@ header {
 form {
 
     * {
-        margin: 8px 0;
+        margin: 10px 0;
     }
 
     input {
@@ -148,7 +148,7 @@ form {
 
 // Validation styling
 
-input:invalid:not(:focus):not(:placeholder-shown) {
+input:invalid:not(:placeholder-shown) {
     border: 1px solid darken(c.$clr-primary-red, 10%);
     // box-shadow: 0 0 0 1px darken(c.$clr-primary-red, 10%);
     color: darken(c.$clr-primary-red, 10%);
@@ -158,7 +158,7 @@ input:invalid:not(:focus):not(:placeholder-shown) {
 
         &::before {
             position: absolute;
-            top: -37px;
+            top: -40px;
             right: 5px;
             content: url(../assets/icon-error.svg);
         }        
@@ -173,7 +173,7 @@ input:invalid:not(:focus):not(:placeholder-shown) {
         }
 
     &[name="user-email"]+span::after{
-        content: "Must be a valid email. e.g.: example@mail.com";
+        content: "Must be a valid email, e.g.: example@mail.com";
         }
 
     &[name="user-pass"]+span::after{
