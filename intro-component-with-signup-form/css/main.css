@@ -22,11 +22,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 25px;
+  padding: 0 25px;
   background-image: url("../assets/bg-intro-mobile.png");
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-color: hsl(0deg, 100%, 74%);
+  max-width: 1200px;
 }
 
 header,
@@ -36,6 +37,7 @@ form {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  max-width: 420px;
 }
 
 header {
@@ -44,6 +46,7 @@ header {
 header .hero-title {
   color: hsl(0deg, 0%, 100%);
   margin-bottom: 20px;
+  line-height: 2.4rem;
 }
 header .hero-para {
   color: #e7e6f0;
@@ -108,4 +111,23 @@ form .submit-btn {
 }
 form .submit-btn:hover {
   background-color: #61d6a3;
+}
+
+@media (min-width: 600px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    padding: 0 60px;
+    margin: 0 auto;
+    background-image: url("../assets/bg-intro-desktop.png");
+  }
+  body header {
+    text-align: left;
+  }
+  body header,
+body main,
+body form {
+    max-width: 450px;
+  }
 }

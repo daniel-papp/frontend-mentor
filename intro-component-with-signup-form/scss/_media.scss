@@ -1,0 +1,25 @@
+@mixin desktop-view {
+
+    @media (min-width: 600px) {
+
+        body {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 45px;
+            padding: 0 60px;
+            margin: 0 auto;
+            background-image: url("../assets/bg-intro-desktop.png");
+
+            header {
+                text-align: left;
+            }
+
+            header,
+            main,
+            form {
+                max-width: 450px;
+            }
+        }
+                
+    }
+}
