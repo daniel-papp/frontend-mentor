@@ -97,7 +97,7 @@ header .hero-para {
   font-size: 0.75rem;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  padding: 10px 15px;
+  padding: 10px 40px 10px 15px;
   border: 1px solid hsl(246deg, 25%, 77%);
   border-radius: 3px;
 }
@@ -114,17 +114,6 @@ header .hero-para {
   outline: 1px solid hsl(249deg, 10%, 26%);
 }
 .input-group label {
-  font-size: 0.75rem;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  color: #9a96c0;
-  position: absolute;
-  top: 13.5px;
-  left: 15.5px;
-}
-.input-group input:focus + label,
-.input-group input:valid + label,
-.input-group input:user-invalid + label {
   display: none;
 }
 

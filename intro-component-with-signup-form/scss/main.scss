@@ -95,7 +95,7 @@ header {
         font-size: 0.75rem;
         font-family: c.$ff-main;
         font-weight: 500;
-        padding: 10px 15px;
+        padding: 10px 40px 10px 15px;
         border: 1px solid c.$clr-med;
         border-radius: 3px;
 
@@ -131,21 +131,22 @@ header {
     }
 
     label {
-        font-size: 0.75rem;
-        font-family: c.$ff-main;
-        font-weight: 500;
-        color: darken(c.$clr-med, 10%);
-        position: absolute;
-        top: 13.5px;
-        left: 15.5px;
-    }
-
-    input:focus + label,
-    input:valid + label,
-    input:user-invalid + label
-    {
+        // font-size: 0.75rem;
+        // font-family: c.$ff-main;
+        // font-weight: 500;
+        // color: darken(c.$clr-med, 10%);
+        // position: absolute;
+        // top: 13.5px;
+        // left: 15.5px;
         display: none;
     }
+
+    // input:focus + label,
+    // input:valid + label,
+    // input:user-invalid + label
+    // {
+    //     display: none;
+    // }
     
 }
 
