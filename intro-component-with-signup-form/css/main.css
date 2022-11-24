@@ -85,11 +85,15 @@ header .hero-para {
   font-weight: 600;
 }
 
-form * {
-  margin: 10px 0;
+.input-group {
+  position: relative;
 }
-form input {
+.input-group * {
+  margin: 8px 0;
+}
+.input-group input {
   height: 2.8rem;
+  width: 100%;
   font-size: 0.75rem;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -97,7 +101,7 @@ form input {
   border: 1px solid hsl(246deg, 25%, 77%);
   border-radius: 3px;
 }
-form input + span {
+.input-group input ~ span {
   position: relative;
   display: none;
   font-size: 0.5rem;
@@ -106,10 +110,26 @@ form input + span {
   font-weight: 600;
   margin: -5px 2px 0 0;
 }
-form input:focus {
+.input-group input:focus {
   outline: 1px solid hsl(249deg, 10%, 26%);
 }
-form .submit-btn {
+.input-group label {
+  font-size: 0.75rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #9a96c0;
+  position: absolute;
+  top: 13.5px;
+  left: 15.5px;
+}
+.input-group input:focus + label,
+.input-group input:valid + label,
+.input-group input:user-invalid + label {
+  display: none;
+}
+
+.submit-btn {
+  margin-top: 10px;
   height: 2.8rem;
   font-size: 0.85rem;
   font-weight: 500;
@@ -122,85 +142,85 @@ form .submit-btn {
   outline: none;
   cursor: pointer;
 }
-form .submit-btn:hover, form .submit-btn:focus {
+.submit-btn:hover, .submit-btn:focus {
   background-color: #61d6a3;
 }
 
-input:invalid:not(:-moz-placeholder-shown) {
+input:invalid:not(:focus):not(:-moz-placeholder-shown) {
   border: 1px solid #ff4747;
   color: #ff4747;
 }
 
-input:invalid:not(:-ms-input-placeholder) {
+input:invalid:not(:focus):not(:-ms-input-placeholder) {
   border: 1px solid #ff4747;
   color: #ff4747;
 }
 
-input:invalid:not(:placeholder-shown) {
+input:invalid:not(:focus):not(:placeholder-shown) {
   border: 1px solid #ff4747;
   color: #ff4747;
 }
-input:invalid:not(:-moz-placeholder-shown) + span {
+input:invalid:not(:focus):not(:-moz-placeholder-shown) ~ span {
   display: block;
 }
-input:invalid:not(:-ms-input-placeholder) + span {
+input:invalid:not(:focus):not(:-ms-input-placeholder) ~ span {
   display: block;
 }
-input:invalid:not(:placeholder-shown) + span {
+input:invalid:not(:focus):not(:placeholder-shown) ~ span {
   display: block;
 }
-input:invalid:not(:-moz-placeholder-shown) + span::before {
+input:invalid:not(:focus):not(:-moz-placeholder-shown) ~ span::before {
   position: absolute;
-  top: -40px;
+  top: -38px;
   right: 5px;
   content: url(../assets/icon-error.svg);
 }
-input:invalid:not(:-ms-input-placeholder) + span::before {
+input:invalid:not(:focus):not(:-ms-input-placeholder) ~ span::before {
   position: absolute;
-  top: -40px;
+  top: -38px;
   right: 5px;
   content: url(../assets/icon-error.svg);
 }
-input:invalid:not(:placeholder-shown) + span::before {
+input:invalid:not(:focus):not(:placeholder-shown) ~ span::before {
   position: absolute;
-  top: -40px;
+  top: -38px;
   right: 5px;
   content: url(../assets/icon-error.svg);
 }
-input:invalid:not(:-moz-placeholder-shown)[name=user-firstname] + span::after {
+input:invalid:not(:focus):not(:-moz-placeholder-shown)[name=user-firstname] ~ span::after {
   content: "First Name cannot be empty";
 }
-input:invalid:not(:-ms-input-placeholder)[name=user-firstname] + span::after {
+input:invalid:not(:focus):not(:-ms-input-placeholder)[name=user-firstname] ~ span::after {
   content: "First Name cannot be empty";
 }
-input:invalid:not(:placeholder-shown)[name=user-firstname] + span::after {
+input:invalid:not(:focus):not(:placeholder-shown)[name=user-firstname] ~ span::after {
   content: "First Name cannot be empty";
 }
-input:invalid:not(:-moz-placeholder-shown)[name=user-lastname] + span::after {
+input:invalid:not(:focus):not(:-moz-placeholder-shown)[name=user-lastname] ~ span::after {
   content: "Last Name cannot be empty";
 }
-input:invalid:not(:-ms-input-placeholder)[name=user-lastname] + span::after {
+input:invalid:not(:focus):not(:-ms-input-placeholder)[name=user-lastname] ~ span::after {
   content: "Last Name cannot be empty";
 }
-input:invalid:not(:placeholder-shown)[name=user-lastname] + span::after {
+input:invalid:not(:focus):not(:placeholder-shown)[name=user-lastname] ~ span::after {
   content: "Last Name cannot be empty";
 }
-input:invalid:not(:-moz-placeholder-shown)[name=user-email] + span::after {
+input:invalid:not(:focus):not(:-moz-placeholder-shown)[name=user-email] ~ span::after {
   content: "Must be a valid email, e.g.: example@mail.com";
 }
-input:invalid:not(:-ms-input-placeholder)[name=user-email] + span::after {
+input:invalid:not(:focus):not(:-ms-input-placeholder)[name=user-email] ~ span::after {
   content: "Must be a valid email, e.g.: example@mail.com";
 }
-input:invalid:not(:placeholder-shown)[name=user-email] + span::after {
+input:invalid:not(:focus):not(:placeholder-shown)[name=user-email] ~ span::after {
   content: "Must be a valid email, e.g.: example@mail.com";
 }
-input:invalid:not(:-moz-placeholder-shown)[name=user-pass] + span::after {
+input:invalid:not(:focus):not(:-moz-placeholder-shown)[name=user-pass] ~ span::after {
   content: "Password must be a at least 8 characters";
 }
-input:invalid:not(:-ms-input-placeholder)[name=user-pass] + span::after {
+input:invalid:not(:focus):not(:-ms-input-placeholder)[name=user-pass] ~ span::after {
   content: "Password must be a at least 8 characters";
 }
-input:invalid:not(:placeholder-shown)[name=user-pass] + span::after {
+input:invalid:not(:focus):not(:placeholder-shown)[name=user-pass] ~ span::after {
   content: "Password must be a at least 8 characters";
 }
 

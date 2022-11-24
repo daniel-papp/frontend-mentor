@@ -80,14 +80,18 @@ header {
     }
 }
 
-form {
+.input-group {
+
+    position: relative;
 
     * {
-        margin: 10px 0;
+        margin: 8px 0;
     }
+    
 
     input {
         height: 2.8rem;
+        width: 100%;
         font-size: 0.75rem;
         font-family: c.$ff-main;
         font-weight: 500;
@@ -95,7 +99,7 @@ form {
         border: 1px solid c.$clr-med;
         border-radius: 3px;
 
-        &+span {
+        &~span {
             position: relative;
             display: none;
             font-size: 0.5rem;
@@ -126,57 +130,75 @@ form {
         // }
     }
 
-    .submit-btn {
-        height: 2.8rem;
-        font-size: 0.85rem;
+    label {
+        font-size: 0.75rem;
+        font-family: c.$ff-main;
         font-weight: 500;
-        border: none;
-        border-radius: 3px;
-        background-color: c.$clr-primary-green;
-        color: c.$clr-light;
-        letter-spacing: 1px;
-        box-shadow: 0 5px 3px darken(c.$clr-primary-green, 10%);
-        outline: none;
-        cursor: pointer;
+        color: darken(c.$clr-med, 10%);
+        position: absolute;
+        top: 13.5px;
+        left: 15.5px;
+    }
 
-        &:hover,
-        &:focus {
-            background-color: lighten(c.$clr-primary-green, 10%);
-        }
-    }   
+    input:focus + label,
+    input:valid + label,
+    input:user-invalid + label
+    {
+        display: none;
+    }
+    
 }
+
+.submit-btn {
+    margin-top: 10px;
+    height: 2.8rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 3px;
+    background-color: c.$clr-primary-green;
+    color: c.$clr-light;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 3px darken(c.$clr-primary-green, 10%);
+    outline: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        background-color: lighten(c.$clr-primary-green, 10%);
+    }
+} 
 
 // Validation styling
 
-input:invalid:not(:placeholder-shown) {
+input:invalid:not(:focus):not(:placeholder-shown) {
     border: 1px solid darken(c.$clr-primary-red, 10%);
-    // box-shadow: 0 0 0 1px darken(c.$clr-primary-red, 10%);
     color: darken(c.$clr-primary-red, 10%);
 
-    &+span {
+    &~span {
         display: block;
 
         &::before {
             position: absolute;
-            top: -40px;
+            top: -38px;
             right: 5px;
             content: url(../assets/icon-error.svg);
         }        
     }
 
-    &[name="user-firstname"]+span::after{
+    &[name="user-firstname"]~span::after{
         content: "First Name cannot be empty";
         }
     
-    &[name="user-lastname"]+span::after{
+    &[name="user-lastname"]~span::after{
         content: "Last Name cannot be empty";
         }
 
-    &[name="user-email"]+span::after{
+    &[name="user-email"]~span::after{
         content: "Must be a valid email, e.g.: example@mail.com";
         }
 
-    &[name="user-pass"]+span::after{
+    &[name="user-pass"]~span::after{
         content: "Password must be a at least 8 characters";
         }
 }

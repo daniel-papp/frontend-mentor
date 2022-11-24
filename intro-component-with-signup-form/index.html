@@ -19,14 +19,26 @@
         </div>
         <div class="form-container">
             <form action="?" method="post" id="signup-form">
-                <input type="text" name="user-firstname" id="user-firstname" placeholder="First Name" required>
-                <span></span>
-                <input type="text" name="user-lastname" id="user-lastname" placeholder="Last Name" required>
-                <span></span>
-                <input type="email" name="user-email" id="user-email" placeholder="Email Adress" required pattern="^[\w\d\.-]+@[a-zA-Z-]+\.[a-zA-Z]+(\.[a-zA-Z]+)?$">
-                <span></span>
-                <input type="password" name="user-pass" id="user-pass" placeholder="Password" required minlength="8">
-                <span></span>
+                <div class="input-group">
+                    <input type="text" name="user-firstname" id="user-firstname" placeholder=" " required>
+                    <label for="user-firstname">First Name</label>
+                    <span></span>
+                </div>
+                <div class="input-group">
+                    <input type="text" name="user-lastname" id="user-lastname" placeholder=" " required>
+                    <label for="user-firstname">Last Name</label>
+                    <span></span>
+                </div>
+                <div class="input-group">
+                    <input type="email" name="user-email" id="user-email" placeholder=" " required pattern="^[\w\d\.-]+@[a-zA-Z-]+\.[a-zA-Z]+(\.[a-zA-Z]+)?$">
+                    <label for="user-firstname">Email Adress</label>
+                    <span></span>
+                </div>
+                <div class="input-group">
+                    <input type="password" name="user-pass" id="user-pass" placeholder=" " required minlength="8">
+                    <label for="user-firstname">Password</label>
+                    <span></span>
+                </div>
                 <button type="submit" class="submit-btn">CLAIM YOUR FREE TRIAL</button>
             </form>
             <p class="tos-para">By clicking the button you are agreeing to our <a href="#">Terms of Services</a></p>
