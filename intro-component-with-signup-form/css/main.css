@@ -85,9 +85,6 @@ header .hero-para {
   font-weight: 600;
 }
 
-.input-group {
-  position: relative;
-}
 .input-group * {
   margin: 8px 0;
 }

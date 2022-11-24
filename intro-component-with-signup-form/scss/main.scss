@@ -3,7 +3,6 @@
 @use "./media" as m;
 
 
-
 body {
     min-height: 100vh;
     display: flex;
@@ -49,7 +48,6 @@ header {
     margin-bottom: 25px;
     box-shadow: 0 8px 3px rgba(0, 0, 0, 0.3);
 
-
     .trial-para {
         color: lighten(c.$clr-med, 15%);
 
@@ -82,13 +80,10 @@ header {
 
 .input-group {
 
-    position: relative;
-
     * {
         margin: 8px 0;
     }
     
-
     input {
         height: 2.8rem;
         width: 100%;
@@ -99,7 +94,7 @@ header {
         border: 1px solid c.$clr-med;
         border-radius: 3px;
 
-        &~span {
+        & ~ span {
             position: relative;
             display: none;
             font-size: 0.5rem;
@@ -107,47 +102,16 @@ header {
             text-align: right;
             font-weight: 600;
             margin: -5px 2px 0 0;
-
         }
 
         &:focus {
             outline: 1px solid c.$clr-dark;
         }
-
-        // &:invalid:not(:focus):not(:placeholder-shown) {
-        //     border: 1px solid darken(c.$clr-primary-red, 10%);
-        //     // box-shadow: 0 0 0 1px darken(c.$clr-primary-red, 10%);
-        //     color: darken(c.$clr-primary-red, 10%);
-
-        //     &+span {
-        //         display: block;
-
-        //         &::after{
-        //         content: "Error";
-        //         }
-        //     }
-
-        // }
     }
 
     label {
-        // font-size: 0.75rem;
-        // font-family: c.$ff-main;
-        // font-weight: 500;
-        // color: darken(c.$clr-med, 10%);
-        // position: absolute;
-        // top: 13.5px;
-        // left: 15.5px;
         display: none;
-    }
-
-    // input:focus + label,
-    // input:valid + label,
-    // input:user-invalid + label
-    // {
-    //     display: none;
-    // }
-    
+    }    
 }
 
 .submit-btn {
@@ -176,7 +140,7 @@ input:invalid:not(:focus):not(:placeholder-shown) {
     border: 1px solid darken(c.$clr-primary-red, 10%);
     color: darken(c.$clr-primary-red, 10%);
 
-    &~span {
+    & ~ span {
         display: block;
 
         &::before {
@@ -187,23 +151,22 @@ input:invalid:not(:focus):not(:placeholder-shown) {
         }        
     }
 
-    &[name="user-firstname"]~span::after{
+    &[name="user-firstname"] ~ span::after{
         content: "First Name cannot be empty";
         }
     
-    &[name="user-lastname"]~span::after{
+    &[name="user-lastname"] ~ span::after{
         content: "Last Name cannot be empty";
         }
 
-    &[name="user-email"]~span::after{
+    &[name="user-email"] ~ span::after{
         content: "Must be a valid email, e.g.: example@mail.com";
         }
 
-    &[name="user-pass"]~span::after{
+    &[name="user-pass"] ~ span::after{
         content: "Password must be a at least 8 characters";
         }
 }
-
 
 
 @include m.desktop-view;
